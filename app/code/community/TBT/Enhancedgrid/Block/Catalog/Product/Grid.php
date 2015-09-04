@@ -342,7 +342,8 @@ class TBT_Enhancedgrid_Block_Catalog_Product_Grid extends Mage_Adminhtml_Block_W
                     ->getTypeId() )
                 ->load()
                 ->toOptionHash();
-            
+                
+            natcasesort($sets);
             $this->addColumn( 'set_name', 
                 array(
                     'header' => Mage::helper( 'catalog' )->__( 'Attrib. Set Name' ), 
